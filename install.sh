@@ -17,8 +17,8 @@ wget https://github.com/findomain/findomain/releases/latest/download/findomain-l
 chmod +x findomain-linux
 mv findomain-linux /usr/bin/
 go install -v github.com/cgboal/sonarsearch/cmd/crobat@latest
-cd /root/go/bin
-cp anew httpx crobat subfinder /usr/bin/
+# Moving all tools to /usr/bin
+cp /root/go/bin/* /usr/bin/
 # kali user and ubuntu user
 apt install pip
 pip install -r dnscan/requirements.txt
